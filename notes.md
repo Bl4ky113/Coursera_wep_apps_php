@@ -19,3 +19,5 @@ jQuery: JS protability layer from the old web days where each browser used a dif
 
 Up to this point, the course has been HTML, Basic web protocols and easy stuff, soo 
 :p
+
+
