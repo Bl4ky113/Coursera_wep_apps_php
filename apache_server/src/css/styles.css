@@ -1,0 +1,56 @@
+
+* { margin: 0; padding: 0; }
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  padding: 0.5rem 2rem;
+
+  background-color: darkblue;
+}
+
+header h1 {
+  color: white;
+  font: 800 2.5rem/150% sans-serif;
+}
+
+main {
+  width: 100vw;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main .labels-wrapper {
+  height: 50vh;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+main .labels-wrapper p {
+  margin: 0.5rem 0;
+   
+  font: 1000 3rem/150% sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main .web-label {
+  margin: 2rem auto;
+  border-bottom: 0.15rem solid darkblue;
+  border-radius: 0.15rem;
+  padding: 0.5rem 1.5rem;
+
+  color: darkgray;
+  text-align: center;
+  font: 400 italic 1.15rem/100% sans-serif;
+
+  align-self: center;
+}

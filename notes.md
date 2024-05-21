@@ -6,6 +6,9 @@ End:
 
 Sessions:
 - 04/25/24
+- ...
+- 05/10/24
+- 05/21/24 A hell of a month, isn't it?
 
 ## Why PHP
 A good bunch of web apps are made with it, so we can make more of them and give support to old apps.
@@ -152,3 +155,57 @@ You can write online if () else () without braces but an ; in the end.
 
 while is pretty normal. do-while exists, ew.
 Normal C for loop style. The only new thing is the $ in the variables.
+
+### Arrays
+$foo = array("bar", "foo", "fee");
+echo $foo[0];
+
+### Maps
+$foo = array(
+    "key" => "foo",
+    "key2" => "foo2"
+)
+echo $foo["key"];
+
+With nested arrays and maps, just declare that one of it's values is an array or a map.
+Some array functions are Functional-Programming style, not OOP methods. Theese are just the normal 
+functions that you would expect, although there's some maps with key related functionality variants.
+
+## $\_GET, $\_POST, $\_SESSION
+
+Theese special variables are a way to handle the http requests. Mainly web ones. By their names you can guess what's their propourse.
+They also are maps, so in order to get anything you have to use a key.
+
+## Functions
+
+Just like the general C stuff, just the $ sign for paramters. But there's a way to get paramters by reference, like in C++. 
+By adding a & before the paramter -> &$param\_by\_ref.
+
+## Var scope
+
+Generally variables are only available as somewhat global, in the root of the file, but theese are not available in function scopes.
+
+You can add a global keyword before defining, but not setting, a variable. This will only work on variables that were defined outside 
+the current scope and, of course, affect them. So better be careful of chaching the code with this stuff.
+
+$bar = 0;
+
+function foo () {
+    global $bar;
+    $bar = 100;
+}
+
+## Include and Require
+
+Both are ways to link and use php files inside php files.
+Include will retrieve the file and add it to the HTML or the general context.
+Require will retrieve the fille and do the same, but if the file isn't available, it'll die and destroy everything.
+
+There's \_once for each function, so if the file was already included or required, or just added, then it wont, since it only has to do it once.
+
+## Zrok and NGrok
+
+Nwo we have to install a firewall bypasseer so the autograder can evaluate our work. 
+But there's a problem. NGrok is a propetary software tool, and that sucks. 
+So I'm going to use Zrok, which does the same thing, it shares files, ports or anything publicly 
+by a temporal url in their dns.
