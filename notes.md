@@ -9,6 +9,8 @@ Sessions:
 - ...
 - 05/10/24
 - 05/21/24 A hell of a month, isn't it?
+- ...
+- 05/28/24
 
 ## Why PHP
 A good bunch of web apps are made with it, so we can make more of them and give support to old apps.
@@ -209,3 +211,25 @@ Nwo we have to install a firewall bypasseer so the autograder can evaluate our w
 But there's a problem. NGrok is a propetary software tool, and that sucks. 
 So I'm going to use Zrok, which does the same thing, it shares files, ports or anything publicly 
 by a temporal url in their dns.
+
+## HTML Forms and PHP
+
+We know that $\_GET exists and others as well, we can use them to handle and use requests. 
+Theese are just made from general html forms and that's about it.
+
+Just define the name of the input, create a submit btn and define in the form with action, or script, will follow and which method should it use.
+
+God damnit, now we are going to have to eat a whole 'html inputs' module
+
+Now something useful is the htmlentities function, which will help us avoid getting an HTML Injection in our forms, that if we need or have 
+to display in HTML some kind of user input.
+
+## MVC
+
+Model View and Controller is a way that we can split how we work and design our code structure.
+Specially dividing the handling of requests, data, dbs and other stuff with the display of the data in 
+the html part.
+
+Generally you would separate theese structures with different code files with different names or directories.
+But in this course we are just going to have the model on the top of the file, the view right after it, and the 
+controller would just be the general php file.
