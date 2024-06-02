@@ -2,7 +2,7 @@
 # Michigan University - Coursera
 
 Start: 04/25/24
-End: 
+End: 06/01/24 wait... that was it?
 
 Sessions:
 - 04/25/24
@@ -11,6 +11,7 @@ Sessions:
 - 05/21/24 A hell of a month, isn't it?
 - ...
 - 05/28/24
+- 06/01/24
 
 ## Why PHP
 A good bunch of web apps are made with it, so we can make more of them and give support to old apps.
